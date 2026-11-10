@@ -18,9 +18,13 @@ public class Main {
         daftarAlat.add(new Komputer("PC-001", "PC Workstation Lab 1", "Baik", "Intel Core i7-12700", 32, "1 TB NVMe SSD"));
         daftarAlat.add(new Komputer("PC-002", "PC Client Lab 1", "Baik", "Intel Core i5-11400", 16, "512 GB SSD"));
         daftarAlat.add(new Komputer("PC-003", "PC Client Lab 2", "Rusak Ringan", "Intel Core i3-10100", 8, "256 GB SSD"));
+        daftarAlat.add(new Komputer("PC-004", "Laptop HP Victus", "Baik", "Intel Core i7-11300", 16, "512 GB SSD"));
+        daftarAlat.add(new Komputer("PC-005", "Laptop HP Victus", "Baik", "Intel Core i7-11300", 16, "512 GB SSD"));
         daftarAlat.add(new Proyektor("PRJ-001", "Proyektor Epson EB-E01", "Baik", "1024x768 (XGA)", 3300));
         daftarAlat.add(new Proyektor("PRJ-002", "Proyektor BenQ MX560", "Baik", "1920x1080 (Full HD)", 4000));
         daftarAlat.add(new Proyektor("PRJ-003", "Proyektor InFocus IN112x", "Rusak Ringan", "800x600 (SVGA)", 3800));
+        daftarAlat.add(new Proyektor("PRJ-004", "Proyektor Acer X1123HP", "Baik", "800x600 (SVGA)", 4000));
+        daftarAlat.add(new Proyektor("PRJ-005", "Proyektor ViewSonic PA503W", "Baik", "1280x800 (WXGA)", 3800));
 
         // SCANNER & CONTROL
         Scanner scanner = new Scanner(System.in);
