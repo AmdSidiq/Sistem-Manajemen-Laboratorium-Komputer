@@ -1,17 +1,7 @@
 package com.pbo.sistemmanajemenlab.model;
 
-/**
- * SUPERCLASS - Alat
- * Merepresentasikan peralatan umum inventaris Laboratorium Komputer.
- * 
- * Materi yang diterapkan:
- * - Class dan Object (Pert. 3): Struktur kode dipisahkan dalam bentuk Class
- * - Encapsulation (Pert. 4): Semua atribut bersifat private dan diakses lewat Getter & Setter
- * - Inheritance (Pert. 6): Menjadi Superclass bagi Komputer dan Proyektor
- */
 public class Alat {
 
-    // ==================== ENCAPSULATION (Pert. 4) ====================
     // Atribut dideklarasikan dengan access modifier PRIVATE
     private String idAlat;
     private String namaAlat;
@@ -60,9 +50,6 @@ public class Alat {
     }
 
     // ==================== METHOD ====================
-    /**
-     * Menampilkan informasi umum alat laboratorium komputer.
-     */
     public void tampilkanInfo() {
         System.out.println("  ID Alat    : " + idAlat);
         System.out.println("  Nama Alat  : " + namaAlat);

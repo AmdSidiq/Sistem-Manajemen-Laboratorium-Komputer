@@ -8,9 +8,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * JavaFX App Launcher (FXML Archetype Template)
- */
 public class App extends Application {
 
     private static Scene scene;

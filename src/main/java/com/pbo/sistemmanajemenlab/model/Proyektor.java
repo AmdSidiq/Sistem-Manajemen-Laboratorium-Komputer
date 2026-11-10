@@ -1,16 +1,7 @@
 package com.pbo.sistemmanajemenlab.model;
 
-/**
- * SUBCLASS - Proyektor (extends Alat)
- * Merepresentasikan unit Proyektor inventaris Laboratorium Komputer.
- * 
- * Materi yang diterapkan:
- * - Inheritance (Pert. 6): Mewarisi atribut dan method dari Superclass Alat
- * - Encapsulation (Pert. 4): Atribut spesifik bersifat private dengan Getter dan Setter
- */
 public class Proyektor extends Alat {
 
-    // ==================== ENCAPSULATION (Pert. 4) ====================
     // Atribut spesifik proyektor lab (PRIVATE)
     private String resolusi;
     private int kecerahanLumens;
@@ -41,11 +32,6 @@ public class Proyektor extends Alat {
         this.kecerahanLumens = kecerahanLumens;
     }
 
-    // ==================== OVERRIDE METHOD ====================
-    /**
-     * Override method tampilkanInfo() dari Superclass Alat
-     * untuk menambahkan spesifikasi teknis proyektor laboratorium.
-     */
     @Override
     public void tampilkanInfo() {
         System.out.println("  [Kategori: Proyektor Lab]");

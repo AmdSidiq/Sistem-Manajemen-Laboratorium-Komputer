@@ -7,39 +7,14 @@ import com.pbo.sistemmanajemenlab.model.Proyektor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * ============================================================
- *        SISTEM MANAJEMEN LABORATORIUM KOMPUTER
- *        Project Akhir - Pemrograman Berorientasi Objek (Tugas 4)
- * ============================================================
- * 
- * 4 Materi OOP yang diimplementasikan:
- * 1. Input Scanner & Control Flow (Pert. 2)
- *    - Menggunakan Scanner untuk membaca input dari keyboard
- *    - Menggunakan while, switch-case, if/else, dan for loop
- * 
- * 2. Class dan Object (Pert. 3)
- *    - Struktur kode dipisahkan dalam Class terpisah (model: Alat, Komputer, Proyektor)
- *    - Instansiasi Object dilakukan di main class ini
- * 
- * 3. Encapsulation (Pert. 4)
- *    - Seluruh atribut model bersifat private
- *    - Akses data menggunakan Getter dan Setter
- * 
- * 4. Inheritance (Pert. 6)
- *    - Komputer extends Alat (Superclass -> Subclass)
- *    - Proyektor extends Alat (Superclass -> Subclass)
- */
 public class Main {
 
     public static void main(String[] args) {
 
-        // ==================== 2. CLASS DAN OBJECT (Pert. 3) ====================
         // Menggunakan ArrayList untuk menampung koleksi objek Alat laboratorium komputer
         ArrayList<Alat> daftarAlat = new ArrayList<>();
 
         // Instansiasi Object dari Subclass (Komputer & Proyektor) dan disimpan pada referensi Superclass (Alat)
-        // Menerapkan konsep INHERITANCE (Pert. 6)
         daftarAlat.add(new Komputer("PC-001", "PC Workstation Lab 1", "Baik", "Intel Core i7-12700", 32, "1 TB NVMe SSD"));
         daftarAlat.add(new Komputer("PC-002", "PC Client Lab 1", "Baik", "Intel Core i5-11400", 16, "512 GB SSD"));
         daftarAlat.add(new Komputer("PC-003", "PC Client Lab 2", "Rusak Ringan", "Intel Core i3-10100", 8, "256 GB SSD"));
@@ -47,7 +22,7 @@ public class Main {
         daftarAlat.add(new Proyektor("PRJ-002", "Proyektor BenQ MX560", "Baik", "1920x1080 (Full HD)", 4000));
         daftarAlat.add(new Proyektor("PRJ-003", "Proyektor InFocus IN112x", "Rusak Ringan", "800x600 (SVGA)", 3800));
 
-        // ==================== 1. SCANNER & CONTROL FLOW (Pert. 2) ====================
+        // SCANNER & CONTROL
         Scanner scanner = new Scanner(System.in);
         boolean running = true; // Variabel kontrol perulangan WHILE
 
@@ -165,7 +140,6 @@ public class Main {
 
                     boolean ditemukan = false;
                     for (int i = 0; i < daftarAlat.size(); i++) {
-                        // Penerapan GETTER (Encapsulation)
                         if (daftarAlat.get(i).getIdAlat().equalsIgnoreCase(cariId)) {
                             System.out.println("\n>> Alat Ditemukan:");
                             daftarAlat.get(i).tampilkanInfo();
@@ -189,7 +163,6 @@ public class Main {
                     for (int i = 0; i < daftarAlat.size(); i++) {
                         if (daftarAlat.get(i).getIdAlat().equalsIgnoreCase(pinjamId)) {
                             statusPinjam = true;
-                            // Penerapan GETTER & SETTER (Encapsulation)
                             if (daftarAlat.get(i).isTersedia()) {
                                 daftarAlat.get(i).setTersedia(false);
                                 System.out.println(">> Sukses: Alat '" + daftarAlat.get(i).getNamaAlat() + "' berhasil dipinjam!");

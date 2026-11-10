@@ -1,16 +1,7 @@
 package com.pbo.sistemmanajemenlab.model;
 
-/**
- * SUBCLASS - Komputer (extends Alat)
- * Merepresentasikan unit Komputer / PC / Workstation di Laboratorium Komputer.
- * 
- * Materi yang diterapkan:
- * - Inheritance (Pert. 6): Mewarisi atribut dan method dari Superclass Alat
- * - Encapsulation (Pert. 4): Atribut spesifik bersifat private dengan Getter dan Setter
- */
 public class Komputer extends Alat {
 
-    // ==================== ENCAPSULATION (Pert. 4) ====================
     // Atribut spesifik komputer lab (PRIVATE)
     private String processor;
     private int ramGb;
@@ -52,10 +43,6 @@ public class Komputer extends Alat {
     }
 
     // ==================== OVERRIDE METHOD ====================
-    /**
-     * Override method tampilkanInfo() dari Superclass Alat
-     * untuk menambahkan spesifikasi teknis komputer laboratorium.
-     */
     @Override
     public void tampilkanInfo() {
         System.out.println("  [Kategori: Komputer / PC Lab]");
