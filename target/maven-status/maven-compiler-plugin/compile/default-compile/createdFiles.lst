@@ -1,0 +1,8 @@
+com\pbo\sistemmanajemenlab\PrimaryController.class
+module-info.class
+com\pbo\sistemmanajemenlab\model\Proyektor.class
+com\pbo\sistemmanajemenlab\Main.class
+com\pbo\sistemmanajemenlab\SecondaryController.class
+com\pbo\sistemmanajemenlab\App.class
+com\pbo\sistemmanajemenlab\model\Alat.class
+com\pbo\sistemmanajemenlab\model\Komputer.class

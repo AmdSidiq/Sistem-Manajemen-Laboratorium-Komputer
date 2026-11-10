@@ -27,8 +27,7 @@ public class Main {
         boolean running = true; // Variabel kontrol perulangan WHILE
 
         System.out.println("=====================================================");
-        System.out.println("     SISTEM MANAJEMEN LABORATORIUM KOMPUTER         ");
-        System.out.println("   Tugas 4 - Pemrograman Berorientasi Objek (PBO)   ");
+        System.out.println("     SISTEM MANAJEMEN LABORATORIUM KOMPUTER          ");
         System.out.println("=====================================================");
 
         // CONTROL FLOW: WHILE LOOP
