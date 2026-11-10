@@ -7,8 +7,8 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbo.sistemmanajemenlab.SecondaryController">
     <children>
-        <Label text="Daftar Peralatan Lab" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
-        <Label text="(Kelola peralatan melalui menu terminal)" />
+        <Label text="Daftar Alat Laboratorium Komputer" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Label text="(Kelola inventaris lab melalui menu terminal)" />
         <Button fx:id="secondaryButton" text="Kembali ke Halaman Utama" onAction="#switchToPrimary"/>
     </children>
     <padding>

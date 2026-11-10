@@ -7,9 +7,9 @@
 
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbo.sistemmanajemenlab.PrimaryController">
     <children>
-        <Label text="Sistem Manajemen Laboratorium" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Label text="Sistem Manajemen Laboratorium Komputer" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
         <Label text="Halaman Utama" />
-        <Button fx:id="primaryButton" text="Lihat Daftar Peralatan" onAction="#switchToSecondary"/>
+        <Button fx:id="primaryButton" text="Lihat Daftar Alat Lab" onAction="#switchToSecondary"/>
     </children>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
