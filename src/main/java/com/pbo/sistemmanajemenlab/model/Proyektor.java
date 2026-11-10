@@ -33,6 +33,11 @@ public class Proyektor extends Alat {
     }
 
     @Override
+    public String getInfo() {
+        return super.getInfo() + " | Resolusi: " + resolusi + " | Kecerahan: " + kecerahanLumens + " Lumens";
+    }
+    
+    @Override
     public void tampilkanInfo() {
         System.out.println("  [Kategori: Proyektor Lab]");
         super.tampilkanInfo(); // Memanggil method milik Superclass

@@ -50,6 +50,10 @@ public class Alat {
     }
 
     // ==================== METHOD ====================
+    public String getInfo() {
+        return "Alat: " + namaAlat + " [ID: " + idAlat + "] | Kondisi: " + kondisi + " | Status: " + (tersedia ? "Tersedia" : "Dipinjam");
+    }
+
     public void tampilkanInfo() {
         System.out.println("  ID Alat    : " + idAlat);
         System.out.println("  Nama Alat  : " + namaAlat);

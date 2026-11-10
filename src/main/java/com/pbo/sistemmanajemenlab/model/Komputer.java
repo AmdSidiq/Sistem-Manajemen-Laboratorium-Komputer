@@ -44,6 +44,11 @@ public class Komputer extends Alat {
 
     // ==================== OVERRIDE METHOD ====================
     @Override
+    public String getInfo() {
+        return super.getInfo() + " | Processor: " + processor + " | RAM: " + ramGb + " GB | Storage: " + storage;
+    }
+
+    @Override
     public void tampilkanInfo() {
         System.out.println("  [Kategori: Komputer / PC Lab]");
         super.tampilkanInfo(); // Memanggil method milik Superclass
